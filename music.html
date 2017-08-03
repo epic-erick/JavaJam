@@ -5,6 +5,10 @@
 		<title>JavaJam Coffee House Music</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="javajam.css">
+		<!-- [if lt IE9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
 	</head>
 
 	<body>
@@ -14,13 +18,17 @@
 		</header>
 
 		<nav>
-			<a href="index.html">Home</a>	  &nbsp;
-			<a href="menu.html">Menu</a>		&nbsp;
-			<a href="music.html">Music</a>	&nbsp;
-			<a href="jobs.html">Jobs</a>		&nbsp;
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="jobs.html">Jobs</a></li>
+			</ul>
 		</nav>
 
     <main>
+				<div id="heroguitar"> </div>
+
         <h2>Music at JavaJam</h2>
 
         <p>
@@ -30,13 +38,13 @@
 
         <h4>January</h4>
           <div class="details">
-            <img src="images/melaniethumb.jpg" alt="Melanie Image" height="80" width="80">
+            <img class="floatleft" src="images/melaniethumb.jpg" alt="Melanie Image" height="80" width="80">
             Melanie Morris entertains with her melodic folk style.
           </div>
 
         <h4>February</h4>
           <div class="details">
-            <img src="images/greg.jpg" alt="Greg Image" height="80px" width="80px">
+            <img class="floatleft" src="images/greg.jpg" alt="Greg Image" height="80px" width="80px">
             Tahoe Greg is back from his tour, New songs, New stories.
           </div>
 
