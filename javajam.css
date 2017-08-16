@@ -130,6 +130,14 @@ header, nav, main, footer {
   background-repeat: no-repeat;
 }
 
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inline;
+}
+
 .details { /* Class */
   padding: 0 20% 0 20%;
   overflow: auto;
@@ -139,3 +147,121 @@ header, nav, main, footer {
   float: left;
   padding: 0 20px 20px 0;
 }
+
+@media only screen and (max-width: 1024px){ /* used for devices 1024px and less (tablets) */
+body {
+  margin: 0;
+}
+
+#wrapper{
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+header {
+border-bottom: 5px solid #fef6c2; /* creates that thin line between nav and header */
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2.5em;
+}
+
+nav {
+  float: none; /* creates 1 column layout */
+  width: auto;
+  padding-top: 0;
+  margin: 10px;
+  font-size: 1.3em;
+}
+
+nav li {
+  display: inline-block; /* creates a horizontal navbar */
+}
+
+nav a {
+  padding: 1em;
+  width: 8em;
+  font-weight: bold;
+  border-style: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  font-size: 90%;
+}
+
+} /* End OF tablet media query 1024px max */
+
+@media only screen and (max-width: 768px){ /* for devices at 768px and less, (smartphones) */
+  header {
+    background-image: url("images/javajammini.jpg");
+    height: 128px;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.2em;
+    width: auto;
+    border-bottom: 1px solid #fef6c2;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  main {
+    padding-top: 1px;
+  }
+
+  h2 {
+    padding: 0.5em 0 0 0.5em;
+    margin-right: 0.5em;
+  }
+
+  #details{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #heroroad, #heromugs, #heroguitar {
+    background-image: none;
+    height: auto;
+  }
+
+  #mobile { /* use href:tel because of smartphone */
+    display: inline;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .floatleft {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+} /* end of smartphone query */
