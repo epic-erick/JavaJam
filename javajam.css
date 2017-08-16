@@ -43,6 +43,7 @@ h4 {
 main { /* hero image should fill entire area? not sure if does yet */
   background-color: #FEF6c2;
   margin-left: 200px;
+  padding-bottom: 40px;
   display: block; /* prevents rendering issues on IE */
 }
 
@@ -95,6 +96,21 @@ footer {
 
 header, nav, main, footer {
   display: block;
+}
+
+table {
+  margin: auto;
+  width: 90%;
+  border-spacing: 0;
+  background-color: #ffffcc;
+}
+
+td, th {
+  padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #d2b48c;
 }
 
 #wrapper{ /* ID */
@@ -201,6 +217,7 @@ main {
   padding: 0;
   margin: 0;
   font-size: 90%;
+  padding-bottom: 40px;
 }
 
 } /* End OF tablet media query 1024px max */
@@ -234,6 +251,7 @@ main {
 
   main {
     padding-top: 1px;
+    padding-bottom: 40px;
   }
 
   h2 {
