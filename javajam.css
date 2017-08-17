@@ -43,6 +43,7 @@ h4 {
 main { /* hero image should fill entire area? not sure if does yet */
   background-color: #FEF6c2;
   margin-left: 200px;
+  padding-top: 0;
   padding-bottom: 40px;
   display: block; /* prevents rendering issues on IE */
 }
@@ -113,16 +114,36 @@ tr:nth-of-type(odd) {
   background-color: #d2b48c;
 }
 
+form {
+  padding: 2em;
+}
+
+label {
+  display: block;
+  float: left;
+  text-align: right;
+  width: 8em;
+  padding-right: 1em;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 1em;
+}
+
 #wrapper{ /* ID */
   width: 80%;
   margin-left: auto; /* both these margins centers the div */
   margin-right: auto;
   padding: 0; /* stretches out *MAIN* so that it covers all of #wrapper div */
-  /*background-color: #fef6c2;*/
   background-color: #231814;
   min-width: 900px; /* makes the div change dynamicly as window changes size */
   max-width: 1280px; /* or else it will all jumble up when shrunk */
   box-shadow: 5px 5px 5px #000000;
+}
+
+#submit {
+  margin-left: 9.5em;
 }
 
 #heroroad {
